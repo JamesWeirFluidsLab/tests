@@ -1,3 +1,7 @@
 *.dep
 */Make/*Gcc*
+*/case/*
+!*/case/system
+!*/case/constant
+!*/case/0
 

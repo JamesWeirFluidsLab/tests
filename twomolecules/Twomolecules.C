@@ -8,23 +8,21 @@
 
 //class polyMoleculeCloudTest : public testing::Test {
 //public:
-//    
-//    virtual void SetUp(reducedUnits& ru, potential& pot,polyMesh& mesh, Time& time){
-//        ru_ = ru;
-//        pot_ = pot;
-//        mesh_ = mesh;
-//        time_ = time;
+//    virtual void SetUp(){
 //    }
-//    
 //// variables
-//    reducedUnits ru_;
-//    potential pot_;
-//    polyMesh mesh_;
-//    Time time_;
+//    Foam::Time* time_;
+//    Foam::polyMoleculeCloud* molecules_;
+//
+//    void setPolyMoleculeData(Foam::Time& time,Foam::polyMoleculeCloud molecules){
+//        time_ = &time;
+//        molecules_ = &molecules;
+//    }
 //};
-TEST(TestTwoMolecules, checkPos){
-    ASSERT_DOUBLE_EQ(0.0,0.002);
-}
+//
+//TEST_F(polyMoleculeCloudTest, checkPos){
+//    Foam::argList args(argc,argv);
+//}
 
 int main(int argc, char *argv[]){
     ::testing::InitGoogleTest(&argc,argv);
@@ -44,6 +42,7 @@ int main(int argc, char *argv[]){
     reducedUnits redUnits(runTime, mesh);
     potential pot(mesh, redUnits);
     polyMoleculeCloud molecules(runTime,mesh,pot,redUnits);
+//    polyMoleculeCloudTest::setPolyMoleculeData(runTime,molecules);
 
     while(runTime.loop())
     {

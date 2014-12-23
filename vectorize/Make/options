@@ -7,7 +7,5 @@ EXE_LIBS = \
     -lOpenFOAM \
     -llagrangian \
     -lpthread \
-    -L${GTEST_DIR} \
-    -libgtest.a
-
-clang++ -isystem ${GTEST_DIR}/include -I${FOAM_SRC}/OpenFOAM/lnInclude -I${FOAM_SRC}/lagrangian/basic/lnInclude -c Test-simd.C
+    -L$(GTEST_DIR) \
+    -lgtest

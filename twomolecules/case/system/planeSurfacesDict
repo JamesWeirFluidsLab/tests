@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      planeSurfacesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+surfaces
+(
+      surface
+      {
+         zoneName        faceA;
+         startPoint      (15.9 15 15);
+         endPoint        (16.1 15 15);
+         writeFaceSet   no;
+      }
+
+       surface
+       {
+          zoneName        faceB;
+          startPoint      (17.9 15 15);
+          endPoint        (18.1 15 15);
+          writeFaceSet   no;
+       }
+ 
+       surface
+       {
+          zoneName        faceC;
+          startPoint      (19.9 15 15);
+          endPoint        (20.1 15 15);
+          writeFaceSet   no;
+       }
+// 
+//       surface
+//       {
+//          zoneName        faceD;
+//          startPoint      (1.9 0 0);
+//          endPoint        (2.1 0 0);
+//          writeFaceSet   no;
+//       }
+// 
+//       surface
+//       {
+//          zoneName        faceE;
+//          startPoint      (3.9 0 0);
+//          endPoint        (4.1 0 0);
+//          writeFaceSet   no;
+//       }
+);
+
+
+// ************************************************************************* //

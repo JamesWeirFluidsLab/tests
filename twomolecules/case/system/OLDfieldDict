@@ -1,0 +1,1472 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fieldPropertiesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+densityFields
+(
+//         density
+//         {
+//             densityModel          densityZone;
+//         
+//             timeProperties
+//             {
+//                 timeOption          write;
+//             }
+//         
+//             densityZoneProperties
+//             {
+//                 zoneName               reservoirZone1;
+//                 molId                  water;
+//                 oneSpecie              yes;
+//                 instantaneous          yes;
+//             }
+//         }
+// 
+//         density
+//         {
+//             densityModel          densityZone;
+//         
+//             timeProperties
+//             {
+//                 timeOption          write;
+//             }
+//         
+//             densityZoneProperties
+//             {
+//                 zoneName               reservoirZone2;
+//                 molId                  water;
+//                 oneSpecie              yes;
+//                 instantaneous          yes;
+//             }
+//         }
+
+        // radial measurements
+        density
+        {
+            densityModel          densityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialMOBZoneProperties
+            {
+                zoneName               cntZoneInlet;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-4 0 0);
+		endPoint	       (-2 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialMOBZoneProperties
+            {
+                zoneName               cntZoneMiddle;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-2 0 0);
+		endPoint	       (2 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialMOBZoneProperties
+            {
+                zoneName               cntZoneOutlet;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (4 0 0);
+		endPoint	       (2 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialMOBZoneProperties
+            {
+                zoneName               cntZone;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-4 0 0);
+		endPoint	       (4 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+	// radial site measurements
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZoneInlet;
+                siteId                 H;
+		startPoint	       (-4 0 0);
+		endPoint	       (-2 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZoneInlet;
+                siteId                 O;
+		startPoint	       (-4 0 0);
+		endPoint	       (-2 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZoneMiddle;
+                siteId                 H;
+		startPoint	       (-2 0 0);
+		endPoint	       (2 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZoneMiddle;
+                siteId                 O;
+		startPoint	       (-2 0 0);
+		endPoint	       (2 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZoneOutlet;
+                siteId                 H;
+		startPoint	       (2 0 0);
+		endPoint	       (4 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZoneOutlet;
+                siteId                 O;
+		startPoint	       (2 0 0);
+		endPoint	       (4 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZone;
+                siteId                 H;
+		startPoint	       (-4 0 0);
+		endPoint	       (4 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+        density
+        {
+            densityModel          densityRadialSitesMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityRadialSitesMOBZoneProperties
+            {
+                zoneName               cntZone;
+                siteId                 O;
+		startPoint	       (-4 0 0);
+		endPoint	       (4 0 0);
+		radius		       0.9;
+		nBins		       50;
+            }
+        }
+
+
+	// zone measurements 
+        density
+        {
+            densityModel          molZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            molZoneProperties
+            {
+                zoneName               cntZone;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous          yes;
+            }
+        }
+
+        density
+        {
+            densityModel          densityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityZoneProperties
+            {
+                zoneName               controlZone1;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous          no;
+            }
+        }
+	
+        density
+        {
+            densityModel          densityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityZoneProperties
+            {
+                zoneName               controlZone2;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous          no;
+            }
+        }	
+
+        density
+        {
+            densityModel          densityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityZoneProperties
+            {
+                zoneName               samplingZone1;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous          no;
+            }
+        }
+	
+        density
+        {
+            densityModel          densityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityZoneProperties
+            {
+                zoneName               samplingZone2;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous          no;
+            }
+        }
+	
+        density
+        {
+            densityModel          densityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            densityZoneProperties
+            {
+                zoneName               cntZone;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous          yes;
+            }
+        }
+
+	// longitudinal measurements
+	density
+	{
+	    densityModel          densityMOBZone;
+
+	    timeProperties
+	    {
+		timeOption          write;
+	    }
+
+	    densityMOBZoneProperties
+	    {
+		zoneName                mdZone;
+		fieldName               densityLong;
+		startPoint              (-20 0 0);
+		endPoint                (28 0 0);
+		nBins                   200;
+		area                    256;
+                molId                   water;
+                oneSpecie               yes;
+	    }
+	}
+
+
+      // FLUXES
+
+      density
+      {
+          densityModel          massFluxSurface;
+
+           timeProperties
+           {
+		timeOption          decoupledFromWriteInterval;
+		nSamples            1;
+		nAverages           3000;
+           }
+
+          massFluxSurfaceProperties
+          {
+              surfaceZoneName                faceA;
+              fluxDirection                  (1 0 0);
+              molId                          water;
+              oneSpecie                      yes;
+              instantaneous                  no;	      
+          }
+      }
+
+      density
+      {
+          densityModel          massFluxSurface;
+
+           timeProperties
+           {
+		timeOption          decoupledFromWriteInterval;
+		nSamples            1;
+		nAverages           1000;
+           }
+
+          massFluxSurfaceProperties
+          {
+              surfaceZoneName                faceB;
+              fluxDirection                  (1 0 0);
+              molId                          water;
+              oneSpecie                      yes;
+              instantaneous                  no;	      
+          }
+      }
+
+      density
+      {
+          densityModel          massFluxSurface;
+
+           timeProperties
+           {
+		timeOption          decoupledFromWriteInterval;
+		nSamples            1;
+		nAverages           3000;
+           }
+
+          massFluxSurfaceProperties
+          {
+              surfaceZoneName                faceC;
+              fluxDirection                  (1 0 0);
+              molId                          water;
+              oneSpecie                      yes;
+              instantaneous                  yes;	      
+          }
+      }
+
+      density
+      {
+          densityModel          massFluxSurface;
+
+           timeProperties
+           {
+		timeOption          decoupledFromWriteInterval;
+		nSamples            1;
+		nAverages           3000;
+           }
+
+          massFluxSurfaceProperties
+          {
+              surfaceZoneName                faceD;
+              fluxDirection                  (1 0 0);
+              molId                          water;
+              oneSpecie                      yes;
+              instantaneous                  no;	      
+          }
+      }
+
+      density
+      {
+          densityModel          massFluxSurface;
+
+           timeProperties
+           {
+		timeOption          decoupledFromWriteInterval;
+		nSamples            1;
+		nAverages           3000;
+           }
+
+          massFluxSurfaceProperties
+          {
+              surfaceZoneName                faceE;
+              fluxDirection                  (1 0 0);
+              molId                          water;
+              oneSpecie                      yes;
+              instantaneous                  no;	      
+          }
+      }
+
+
+
+);
+
+velocityFields
+(
+        // radial measurements
+        velocity
+        {
+            velocityModel          velocityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityRadialMOBZoneProperties
+            {
+                zoneName               cntZoneInlet;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-4 0 0);
+		endPoint	       (-2 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+        velocity
+        {
+            velocityModel          velocityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityRadialMOBZoneProperties
+            {
+                zoneName               cntZoneMiddle;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-2 0 0);
+		endPoint	       (2 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+        velocity
+        {
+            velocityModel          velocityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityRadialMOBZoneProperties
+            {
+                zoneName               cntZoneOutlet;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (2 0 0);
+		endPoint	       (4 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+        velocity
+        {
+            velocityModel          velocityRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityRadialMOBZoneProperties
+            {
+                zoneName               cntZone;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-4 0 0);
+		endPoint	       (4 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+	// longitudinal measurements
+
+	velocity
+	{
+	    velocityModel          velocityMOBZone;
+
+	    timeProperties
+	    {
+		timeOption          write;
+	    }
+
+	    velocityMOBZoneProperties
+	    {
+		zoneName                mdZone;
+		fieldName               velocityLong;
+		startPoint              (-20 0 0);
+		endPoint                (28 0 0);
+		nBins                   150;
+                molId                   water;
+                oneSpecie               yes;
+	    }
+	}
+
+        velocity
+        {
+            velocityModel          velocityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityZoneProperties
+            {
+                zoneName               cntZone;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous	       no;
+            }
+        }
+
+        velocity
+        {
+            velocityModel          velocityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityZoneProperties
+            {
+                zoneName               samplingZone1;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous	       no;
+            }
+        }
+
+        velocity
+        {
+            velocityModel          velocityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityZoneProperties
+            {
+                zoneName               samplingZone2;
+                molId                  water;
+                oneSpecie              yes;
+                instantaneous	       no;
+            }
+        }
+
+/*
+        velocity
+        {
+            velocityModel          velocityZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            velocityZoneProperties
+            {
+                zoneName               reservoirSubZone1;
+                molId                  Ar;
+                oneSpecie              yes;
+                instantaneous	       no;
+            }
+        }
+*/
+
+);
+
+
+ temperatureFields
+ (
+
+//        temperature
+//        {
+//            temperatureModel          temperatureZone;
+//    
+//            timeProperties
+//            {
+//                timeOption   	general;
+//                nSamples 	1;
+//                nAverages 	100;
+//            }
+//    
+//            temperatureZoneProperties
+//            {
+//                zoneName                reservoirZone1;
+//                molId                   water;
+//                oneSpecie               yes;
+//                instantaneous           yes;
+//            }
+//        }
+// 
+//        temperature
+//        {
+//            temperatureModel          temperatureZone;
+//    
+//            timeProperties
+//            {
+//                timeOption   	general;
+//                nSamples 	1;
+//                nAverages 	100;
+//            }
+//    
+//            temperatureZoneProperties
+//            {
+//                zoneName                reservoirZone2;
+//                molId                   water;
+//                oneSpecie               yes;
+//                instantaneous           yes;
+//            }
+//         }
+
+	// radial measurements
+
+        temperature
+        {
+            temperatureModel          temperatureRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+
+            timePropertiesForVelocity
+	    {
+		    timeOption          decoupledFromWriteInterval;
+		    nSamples            1;
+		    nAverages           100;
+	    }
+
+            temperatureRadialMOBZoneProperties
+            {
+                zoneName               cntZoneInlet;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-4 0 0);
+		endPoint	       (2 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+
+        temperature
+        {
+            temperatureModel          temperatureRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+
+            timePropertiesForVelocity
+	    {
+		    timeOption          decoupledFromWriteInterval;
+		    nSamples            1;
+		    nAverages           100;
+	    }
+
+            temperatureRadialMOBZoneProperties
+            {
+                zoneName               cntZoneMiddle;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-2 0 0);
+		endPoint	       (2 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+        temperature
+        {
+            temperatureModel          temperatureRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+
+            timePropertiesForVelocity
+	    {
+		    timeOption          decoupledFromWriteInterval;
+		    nSamples            1;
+		    nAverages           100;
+	    }
+
+            temperatureRadialMOBZoneProperties
+            {
+                zoneName               cntZoneOutlet;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (2 0 0);
+		endPoint	       (4 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+        temperature
+        {
+            temperatureModel          temperatureRadialMOBZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+
+            timePropertiesForVelocity
+	    {
+		    timeOption          decoupledFromWriteInterval;
+		    nSamples            1;
+		    nAverages           100;
+	    }
+
+            temperatureRadialMOBZoneProperties
+            {
+                zoneName               cntZone;
+                molId                  water;
+                oneSpecie              yes;
+		startPoint	       (-4 0 0);
+		endPoint	       (4 0 0);
+		radius		       1.7;
+		nBins		       50;
+            }
+        }
+
+       // zonal measurements
+       temperature
+       {
+           temperatureModel          temperatureZone;
+   
+           timeProperties
+           {
+               timeOption   	write;
+           }
+   
+           temperatureZoneProperties
+           {
+               zoneName                controlZone1;
+               molId                   water;
+               oneSpecie               yes;
+               instantaneous           no;
+           }
+        }
+
+       temperature
+       {
+           temperatureModel          temperatureZone;
+   
+           timeProperties
+           {
+               timeOption   	write;
+           }
+   
+           temperatureZoneProperties
+           {
+               zoneName                controlZone2;
+               molId                   water;
+               oneSpecie               yes;
+               instantaneous           no;
+           }
+        }
+
+       temperature
+       {
+           temperatureModel          temperatureZone;
+   
+           timeProperties
+           {
+               timeOption   	write;
+           }
+   
+           temperatureZoneProperties
+           {
+               zoneName                samplingZone1;
+               molId                   water;
+               oneSpecie               yes;
+               instantaneous           no;
+           }
+        }
+
+       temperature
+       {
+           temperatureModel          temperatureZone;
+   
+           timeProperties
+           {
+               timeOption   	write;
+           }
+   
+           temperatureZoneProperties
+           {
+               zoneName                samplingZone2;
+               molId                   water;
+               oneSpecie               yes;
+               instantaneous           no;
+           }
+        }
+
+	// longitudinal measurements
+
+	temperature
+	{
+	    temperatureModel          temperatureMOBZone;
+
+	    timeProperties
+	    {
+		timeOption          write;
+	    }
+
+	    timePropertiesForVelocity
+	    {
+		    timeOption          decoupledFromWriteInterval;
+		    nSamples            1;
+		    nAverages           100;
+	    }
+
+	    temperatureMOBZoneProperties
+	    {
+		zoneName                mdZone;
+		fieldName               temp;
+		startPoint              (-20 0 0);
+		endPoint                (28 0 0);
+		nBins                   100;
+                molId                   water;
+                oneSpecie               yes;
+	    }
+	}
+);
+
+
+pressureFields
+(
+
+	pressure
+	{
+	    pressureModel          pressureMOBZone;
+
+	    timeProperties
+	    {
+		timeOption          write;
+	    }
+
+	    timePropertiesForVelocity
+	    {
+		timeOption          decoupledFromWriteInterval;
+		nSamples            1;
+		nAverages           100;
+	    }
+
+	    pressureMOBZoneProperties
+	    {
+		zoneName                mdZone;
+		fieldName               pressureLong;
+		startPoint              (-20 0 0);
+		endPoint                (28 0 0);
+		nBins                   100;
+		area                    256.00;
+                molId                   water;
+                oneSpecie               yes;
+	    }
+	}
+
+//         pressure
+//         {
+//             pressureModel          pressureZone;
+//         
+//             timeProperties
+//             {
+//                 timeOption          write;
+//             }
+//         
+//             pressureZoneProperties
+//             {
+//                zoneName                reservoirZone1;
+//                molId                   water;
+//                oneSpecie               yes;
+//                instantaneous           yes;
+//             }
+//         }
+// 
+//         pressure
+//         {
+//             pressureModel          pressureZone;
+//         
+//             timeProperties
+//             {
+//                 timeOption          write;
+//             }
+//         
+//             pressureZoneProperties
+//             {
+//                zoneName                reservoirZone2;
+//                molId                   water;
+//                oneSpecie               yes;
+//                instantaneous           yes;
+//             }
+//         }
+
+//         pressure
+//         {
+//             pressureModel          pressureZone;
+//         
+//             timeProperties
+//             {
+//                 timeOption          write;
+//             }
+//         
+//             pressureZoneProperties
+//             {
+//                zoneName                controlZone1;
+//                molId                   water;
+//                oneSpecie               yes;
+//                instantaneous           yes;
+//             }
+//         }
+// 
+//         pressure
+//         {
+//             pressureModel          pressureZone;
+//         
+//             timeProperties
+//             {
+//                 timeOption          write;
+//             }
+//         
+//             pressureZoneProperties
+//             {
+//                zoneName                controlZone2;
+//                molId                   water;
+//                oneSpecie               yes;
+//                instantaneous           yes;
+//             }
+//         }
+        pressure
+        {
+            pressureModel          pressureZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            pressureZoneProperties
+            {
+               zoneName                samplingZone1;
+               molId                   water;
+               oneSpecie               yes;
+               instantaneous           yes;
+            }
+        }
+
+        pressure
+        {
+            pressureModel          pressureZone;
+        
+            timeProperties
+            {
+                timeOption          write;
+            }
+        
+            pressureZoneProperties
+            {
+               zoneName                samplingZone2;
+               molId                   water;
+               oneSpecie               yes;
+               instantaneous           yes;
+            }
+        }
+
+);
+
+generalFields
+(
+
+    // - standard
+  
+    generalField
+    {
+        generalFieldModel          outputProperties;
+
+        timeProperties
+        {
+            timeOption          write;
+        }
+    }
+
+//      generalField
+//      {
+//           generalFieldModel          kEMOBZone;
+//   
+//          timeProperties
+//           {
+//               timeOption          general;
+//               nSamples            1;
+//               nAverages           200;
+//           }
+//   
+//           kEMOBZoneProperties
+//           {
+// 		zoneName                mdZone;
+// 		fieldName               kELong;
+// 		startPoint              (-26 0 0);
+// 		endPoint                (26 0 0);
+// 		nBins                   100;
+//                 molId                   water;
+//                 oneSpecie               yes;
+//           }
+//        }
+
+     generalField
+     {
+          generalFieldModel          energyZone;
+  
+         timeProperties
+          {
+              timeOption          write;
+          }
+  
+          energyZoneProperties
+          {
+              zoneName                samplingZone1;
+              molId                   water;
+              oneSpecie               yes;
+          }
+       }
+
+     generalField
+     {
+          generalFieldModel          energyZone;
+  
+         timeProperties
+          {
+              timeOption          write;
+          }
+  
+          energyZoneProperties
+          {
+              zoneName                samplingZone2;
+              molId                   water;
+              oneSpecie               yes;
+          }
+       }
+
+     generalField
+     {
+          generalFieldModel          energyZone;
+  
+         timeProperties
+          {
+              timeOption          write;
+          }
+  
+          energyZoneProperties
+          {
+              zoneName                cntZone;
+              molId                   water;
+              oneSpecie               yes;
+          }
+       }
+
+     generalField
+     {
+          generalFieldModel          dipoleProbabilityDistribution;
+  
+         timeProperties
+          {
+	      timeOption          	write;
+          }
+  
+          dipoleProbabilityDistributionProperties
+          {
+              zoneName                samplingZone1;
+	      angleMax		      180;
+	      nBins		      60;
+              molId                   water;
+              oneSpecie               yes;
+          }
+       }
+
+     generalField
+     {
+          generalFieldModel          dipoleProbabilityDistribution;
+  
+         timeProperties
+          {
+	      timeOption          	write;
+          }
+  
+          dipoleProbabilityDistributionProperties
+          {
+              zoneName                cntZone;
+	      angleMax		      180;
+	      nBins		      60;
+              molId                   water;
+              oneSpecie               yes;
+          }
+       }
+
+     generalField
+     {
+         generalFieldModel          trackPolyMolecule;
+ 
+         timeProperties
+         {
+ 	    timeOption          	decoupledFromWriteInterval;
+ 	    nSamples			1;
+ 	    nAverages			10;
+         }
+ 
+         trackPolyMoleculeProperties
+         {
+ 	    fieldName			trackMoleculeA;
+ 	    startPoint			(0 0 0); //(-8 -2.5 0);
+ 	    molId			water;
+ 	    outputParaFoamFile		yes;
+         }
+     }
+     
+     generalField
+     {
+         generalFieldModel          trackPolyMolecule;
+ 
+         timeProperties
+         {
+ 	    timeOption          	decoupledFromWriteInterval;
+ 	    nSamples			1;
+ 	    nAverages			100;
+         }
+ 
+         trackPolyMoleculeProperties
+         {
+ 	    fieldName			trackMoleculeB;
+ 	    startPoint			(-3.5 0 0); //(-8 -2.5 0);
+ 	    molId			water;
+ 	    outputParaFoamFile		yes;
+         }
+     }
+     generalField
+     {
+         generalFieldModel          trackPolyMolecule;
+ 
+         timeProperties
+         {
+ 	    timeOption          	decoupledFromWriteInterval;
+ 	    nSamples			1;
+ 	    nAverages			100;
+         }
+ 
+         trackPolyMoleculeProperties
+         {
+ 	    fieldName			trackMoleculeC;
+ 	    startPoint			(-2.5 0 0); //(-8 -2.5 0);
+ 	    molId			water;
+ 	    outputParaFoamFile		yes;
+         }
+     }
+     generalField
+     {
+         generalFieldModel          trackPolyMolecule;
+ 
+         timeProperties
+         {
+ 	    timeOption          	decoupledFromWriteInterval;
+ 	    nSamples			1;
+ 	    nAverages			100;
+         }
+ 
+         trackPolyMoleculeProperties
+         {
+ 	    fieldName			trackMoleculeD;
+ 	    startPoint			(2.4 0 0); //(-8 -2.5 0);
+ 	    molId			water;
+ 	    outputParaFoamFile		yes;
+         }
+     }
+
+
+
+//      generalField
+//      {
+//          generalFieldModel          trackPolyMolecule;
+//  
+//          timeProperties
+//          {
+//  	    timeOption          	decoupledFromWriteInterval;
+//  	    nSamples			1;
+//  	    nAverages			10;
+//          }
+//  
+//          trackPolyMoleculeProperties
+//          {
+//  	    fieldName			aguaSampling;
+//  	    startPoint			(-8 0 0); //(-8 -2.5 0);
+//  	    molId			water;
+//  	    outputParaFoamFile		yes;
+//          }
+//      }
+     
+/*
+     generalField
+     {
+         generalFieldModel          trackPolyMolecule;
+ 
+         timeProperties
+         {
+ 	    timeOption          	decoupledFromWriteInterval;
+ 	    nSamples			1;
+ 	    nAverages			10;
+         }
+ 
+         trackPolyMoleculeProperties
+         {
+ 	    fieldName			trackWater;
+ 	    startPoint			(-4 0 0); //(-8 -2.5 0);
+ 	    molId			water;
+ 	    outputParaFoamFile		yes;
+         }
+     }
+*/
+/*
+    generalField
+    {
+        generalFieldModel          trackMolecule;
+
+        timeProperties
+        {
+	    timeOption          	decoupledFromWriteInterval;
+	    nSamples			1;
+	    nAverages			10;
+        }
+
+        trackMoleculeProperties
+        {
+	    fieldName			molMiddleShell;
+	    startPoint			(-5.14815628971 1.12435284582 0.085719921891); //(-8 -1.2 0);
+	    molId			Ar;
+	    outputParaFoamFile		yes;
+        }
+    }
+
+    generalField
+    {
+        generalFieldModel          trackMolecule;
+
+        timeProperties
+        {
+	    timeOption          	decoupledFromWriteInterval;
+	    nSamples			1;
+	    nAverages			10;
+        }
+
+        trackMoleculeProperties
+        {
+	    fieldName			molInnerShell;
+	    startPoint			(-4.00777183927 0.892267640314 0.352387183917); //(-8 0 0);
+	    molId			Ar;
+	    outputParaFoamFile		yes;
+        }
+    }
+
+*/
+/*
+     generalField
+     {
+          generalFieldModel          energyZone;
+  
+         timeProperties
+          {
+              timeOption          general;
+              nSamples            1;
+              nAverages           200;
+          }
+  
+          energyZoneProperties
+          {
+              zoneName                reservoirZone1;
+              molId                   Ar;
+              oneSpecie               yes;
+          }
+       }
+
+     generalField
+     {
+          generalFieldModel          energyZone;
+  
+         timeProperties
+          {
+              timeOption          general;
+              nSamples            1;
+              nAverages           200;
+          }
+  
+          energyZoneProperties
+          {
+              zoneName                reservoirZone2;
+              molId                   Ar;
+              oneSpecie               yes;
+          }
+       }
+
+  */
+);
+
+
+
+// ************************************************************************* //

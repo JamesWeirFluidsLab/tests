@@ -1,0 +1,107 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fieldPropertiesDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+// WATER FIELDS
+
+polyFields
+(
+
+
+    field
+    {
+        fieldModel              polyPDB;
+
+        timeProperties
+        {
+              timeOption          write;
+        }
+
+        polyPDBProperties
+        {
+            fieldName               vis;
+            zoneName                mdZone;
+            molIds                  (water);
+            sitesToExclude          ();
+            numberOfFiles            1;
+	    numberOfOutputSteps      1;
+        }
+    }
+
+    /*field
+    {
+        fieldModel              polyForceTwoMolecules;
+
+        timeProperties
+        {
+            timeOption          write;
+            resetAtOutput       off;
+        }
+        polyForceTwoMoleculesProperties
+        {
+            fieldName               tracking;
+            zoneName                mdZone;
+            molSiteIdA              water;
+            molSiteIdB              water;
+            molPointA               (2.0  7.609 7.609);
+            molPointB               (7.0 7.609 7.609);
+            rMax                    5.0;
+            nBins                   25;
+            
+        }
+    }*/
+);
+
+// MONATOMIC FIELDS
+
+atomisticFields
+(
+);
+
+combinedFields
+(
+
+     field
+    {
+        fieldModel              combinedPDB;
+
+        timeProperties
+        {
+              timeOption          write;
+        }
+
+        combinedPDBProperties
+        {
+            fieldName               vis;
+            zoneName                mdZone;
+            molIds                  (water Ar);
+            sitesToExclude          ();
+            numberOfFiles            1;
+	    numberOfOutputSteps    1;
+        }
+    }
+
+    // - standard
+    field
+    {
+        fieldModel             combinedOutputProperties;
+
+        timeProperties
+        {
+            timeOption          write;
+        }
+    }
+);
+
+// ************************************************************************* //

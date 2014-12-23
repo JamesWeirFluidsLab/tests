@@ -1,0 +1,55 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          mdInitialiseDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+polyConfigurations
+(
+
+    configuration
+    {
+        type                    polyPlaceMolecules;
+        zoneName                mdZone;
+        molPoints               ((4.5  7.609 7.609));
+        molId                   water;
+        fixedProperties         yes;
+        velocity                (0.0 0.0 0.0);
+    }   
+
+    configuration
+    {
+        type                    polyPlaceMolecules;
+        zoneName                mdZone;
+        molPoints               ((7.0  7.609 7.609));
+        molId                   water;
+        fixedProperties         yes;
+        velocity                (0.0 0.0 0.0);
+    }
+
+);
+
+
+
+
+
+// ************************************************************************* //

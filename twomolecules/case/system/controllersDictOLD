@@ -1,0 +1,522 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controllersDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+atomisticStateControllers
+(
+//     controller
+//     {
+//         controllerProperties
+//         {
+//             zoneName            mdZone;
+//             controlSwitch       yes;
+//             readStateFromFile   yes;
+// 
+//             timeProperties
+//             {
+//                 nSamples            1;
+//                 nControls           1;
+//                 nAverages           200;
+//                 initialTimePeriod   0.0;
+// 		decoupledFromWriteInterval	yes;
+//             }
+//         }
+// 
+//         stateControllerModel        atomisticTemperatureBerendsen;
+// 
+//         atomisticTemperatureBerendsenProperties
+//         {
+//             temperature            	1.4;
+//             tauT                    	0.2;
+// 	    oneSpecie		    	yes;
+// 	    molId		    	Ar;
+// 	    globalControlZone       	yes;
+// 	    coarseGrainedMeasurements	no;
+//         }
+//     }
+);
+
+waterStateControllers
+(
+//     controller
+//     {
+//         controllerProperties
+//         {
+//             zoneName            controlZone1;
+//             controlSwitch       yes;
+//             readStateFromFile   yes;
+// 
+//             timeProperties
+//             {
+//                 nSamples            1;
+//                 nControls           20;
+//                 nAverages           100;
+//                 initialTimePeriod   0.0;
+//              decoupledFromWriteInterval      yes;
+//             }
+//         }
+// 
+//         stateControllerModel         waterDensityControlZone;
+// 
+//         waterDensityControlZoneProperties
+//         {
+//             molId                   water;
+//             samplingZoneName        controlZone1;
+// 
+//             massDensity             1.04723706;
+//             temperature             3.816;
+//             velocity                (0 0 0);
+//          
+//          usherProperties
+//          {
+//              velocityType            maxwellian; // fixed/maxwellian;
+//              maxDisplTries           50;
+//              maxMolTries             10;
+//              maxUphillMoves          5;
+//              pERange                 100;
+//              deltaS                  0.05;
+//              deltaTheta              0.1;
+//              removalScheme           closest;
+//              controllerAtBoundary    no;
+//              pEModelId               0;
+//          }
+//         }
+//     }    
+    
+/*    controller
+    {
+        controllerProperties
+        {
+            zoneName            controlZone2;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           20;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel         waterDensityControlZone;
+
+        waterDensityControlZoneProperties
+        {
+            molId                   water;
+            samplingZoneName        controlZone2;
+
+            massDensity             1.04723706;
+            temperature             3.816;
+            velocity                (0 0 0);
+         
+         usherProperties
+         {
+             velocityType            maxwellian; // fixed/maxwellian;
+             maxDisplTries           50;
+             maxMolTries             10;
+             maxUphillMoves          5;
+             pERange                 100;
+             deltaS                  0.05;
+             deltaTheta              0.1;
+             removalScheme           closest;
+             controllerAtBoundary    no;
+             pEModelId               0;
+         }
+        }
+    } */   
+    
+//     controller
+//     {
+//         controllerProperties
+//         {
+//             zoneName            samplingZone1;
+//             controlSwitch       yes;
+//             readStateFromFile   yes;
+// 
+//             timeProperties
+//             {
+//                 nSamples            1;
+//                 nControls           20;
+//                 nAverages           100;
+//                 initialTimePeriod   0.0;
+//              decoupledFromWriteInterval      yes;
+//             }
+//         }
+// 
+//         stateControllerModel         waterDensityControlZone;
+// 
+//         waterDensityControlZoneProperties
+//         {
+//             molId                   water;
+//             samplingZoneName        samplingZone1;
+// 
+//             massDensity             1.04723706;
+//             temperature             3.816;
+//             velocity                (0 0 0);
+//          
+//          usherProperties
+//          {
+//              velocityType            maxwellian; // fixed/maxwellian;
+//              maxDisplTries           50;
+//              maxMolTries             10;
+//              maxUphillMoves          5;
+//              pERange                 100;
+//              deltaS                  0.05;
+//              deltaTheta              0.1;
+//              removalScheme           closest;
+//              controllerAtBoundary    no;
+//              pEModelId               0;
+//          }
+//         }
+//     }
+    
+/*    controller
+    {
+        controllerProperties
+        {
+            zoneName            samplingZone2;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           20;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel         waterDensityControlZone;
+
+        waterDensityControlZoneProperties
+        {
+            molId                   water;
+            samplingZoneName        samplingZone2;
+
+            massDensity             1.04723706;
+            temperature             3.816;
+            velocity                (0 0 0);
+         
+         usherProperties
+         {
+             velocityType            maxwellian; // fixed/maxwellian;
+             maxDisplTries           50;
+             maxMolTries             10;
+             maxUphillMoves          5;
+             pERange                 100;
+             deltaS                  0.05;
+             deltaTheta              0.1;
+             removalScheme           closest;
+             controllerAtBoundary    no;
+             pEModelId               0;
+         }
+        }
+    }  */  
+    
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            controlZone1;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel        waterTemperatureBerendsen;
+
+        waterTemperatureBerendsenProperties
+        {
+            temperature             3.816;
+            tauT                    0.1;
+         oneSpecie               yes;
+         molId                   water;
+         globalControlZone       yes;
+         coarseGrainedMeasurements   no;
+        }
+    }
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            reservoirZone1;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel        waterTemperatureAndersen;
+
+        waterTemperatureAndersenProperties
+        {
+            temperature             3.816;
+            velocity                (0.0 0.0 0.0);
+            tauT                    0.01;
+         oneSpecie               yes;
+         molId                   water;
+         alpha                   0;
+        }
+    }    
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            reservoirZone2;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel        waterTemperatureAndersen;
+
+        waterTemperatureAndersenProperties
+        {
+            temperature             3.816;
+            velocity                (0.0 0.0 0.0);
+            tauT                    0.01;
+         oneSpecie               yes;
+         molId                   water;
+         alpha                   0;
+        }
+    }
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            samplingZone1;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel        waterTemperatureBerendsen;
+
+        waterTemperatureBerendsenProperties
+        {
+            temperature             3.816;
+            tauT                    0.1;
+         oneSpecie               yes;
+         molId                   water;
+         globalControlZone       yes;
+         coarseGrainedMeasurements   no;
+        }
+    }    
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            samplingZone2;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel        waterTemperatureBerendsen;
+
+        waterTemperatureBerendsenProperties
+        {
+            temperature             3.816;
+            tauT                    0.1;
+         oneSpecie               yes;
+         molId                   water;
+         globalControlZone       yes;
+         coarseGrainedMeasurements   no;
+        }
+    }
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            controlZone1;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           20;
+                nAverages           100;
+                initialTimePeriod   0.0;
+             decoupledFromWriteInterval      yes;
+            }
+        }
+
+        stateControllerModel         waterDensityControlZoneBoundary;
+
+        waterDensityControlZoneBoundaryProperties
+        {
+            molId                   water;
+            samplingZoneName        samplingZone1;
+            massDensity             1.05; //1.3121;
+            temperature             3.816;
+            velocity                (0 0 0);
+            alpha                   0.5;
+
+         usherProperties
+         {
+             velocityType            maxwellian; // fixed/maxwellian;
+             maxDisplTries           50;
+             maxMolTries             10;
+             maxUphillMoves          5;
+             pERange                 100;
+             deltaS                  0.05;
+             deltaTheta              0.1;
+//           pEOvlp                  10000.0;
+             removalScheme           closest;
+             controllerAtBoundary    no;
+             pEModelId               0;
+         }
+        }
+    }
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            controlZone1;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           1;
+                initialTimePeriod   0.0;
+            }
+        }
+
+        stateControllerModel        waterPressureBoundaryFlux;
+
+        waterPressureBoundaryFluxProperties
+        {
+         pressure                6.4961;//1.7458
+         samplingZoneName        samplingZone1;
+         area                    196;
+         fluxDirection           (1 0 0);
+         oneSpecie               yes;
+         molId                   water;
+         tauT                    0.5;
+         instantaneous           yes;
+
+         integralTerm            yes;
+         integralGain            2e5;//1e5
+
+         derivativeTerm          no;
+         derivativeGain          20;//20
+         adaptiveTimeSteps       200;
+        }
+    }
+    
+    controller
+    {
+        controllerProperties
+        {
+            zoneName            controlZone2;
+            controlSwitch       yes;
+            readStateFromFile   yes;
+
+            timeProperties
+            {
+                nSamples            1;
+                nControls           1;
+                nAverages           1;
+                initialTimePeriod   0.0;
+            }
+        }
+
+        stateControllerModel        waterPressureFlux;
+
+        waterPressureFluxProperties
+        {
+         pressure                0.5867;
+//       samplingZoneName        middleRegion;
+         area                    196;
+         fluxDirection           (-1 0 0);
+         oneSpecie               yes;
+         molId                   water;
+         alpha                   1;
+         instantaneous           yes;
+        }
+    } 
+    
+    
+
+);
+
+atomisticFluxControllers
+(
+
+);
+
+
+waterFluxControllers
+(
+
+);
+
+
+// ************************************************************************* //

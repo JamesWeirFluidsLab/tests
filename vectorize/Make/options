@@ -1,0 +1,13 @@
+EXE_INC = \
+    -I$(LIB_SRC)/OpenFOAM/lnInclude \
+    -I$(LIB_SRC)/lagrangian/basic/lnInclude \
+    -isystem $(GTEST_DIR)/include
+
+EXE_LIBS = \
+    -lOpenFOAM \
+    -llagrangian \
+    -lpthread \
+    -L${GTEST_DIR} \
+    -libgtest.a
+
+clang++ -isystem ${GTEST_DIR}/include -I${FOAM_SRC}/OpenFOAM/lnInclude -I${FOAM_SRC}/lagrangian/basic/lnInclude -c Test-simd.C

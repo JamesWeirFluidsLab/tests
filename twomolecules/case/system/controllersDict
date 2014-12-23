@@ -1,0 +1,70 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controllersDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+atomisticStateControllers
+(
+
+);
+
+polyStateControllers
+(   
+ 
+ /*controller
+     {
+         controllerProperties
+         {
+             zoneName            mdZone;
+             controlSwitch       yes;
+             readStateFromFile   yes;
+
+             timeProperties
+             {
+                 nSamples            1;
+                 nControls           1;
+                 nAverages           100;
+                 initialTimePeriod   0.0;
+                 decoupledFromWriteInterval      yes;
+             }
+         }
+
+         stateControllerModel        waterTemperatureBerendsen;
+
+         waterTemperatureBerendsenProperties
+         {
+             temperature             3.84116;
+             tauT                    0.1;
+             oneSpecie               yes;
+             molId                   water;
+             globalControlZone       yes;
+             coarseGrainedMeasurements   no;
+         }
+     }
+  */
+);
+
+atomisticFluxControllers
+(
+
+);
+
+
+polyFluxControllers
+(
+
+);
+
+
+// ************************************************************************* //

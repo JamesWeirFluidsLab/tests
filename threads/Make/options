@@ -1,0 +1,7 @@
+EXE_INC = \
+    -isystem $(GTEST_DIR)/include
+
+EXE_LIBS = \
+    -lpthread \
+    -L$(GTEST_DIR) \
+    -lgtest

@@ -1,0 +1,18 @@
+EXE_INC = \
+-I$(LIB_SRC)/finiteVolume/lnInclude \
+-I$(LIB_SRC)/meshTools/lnInclude \
+-I$(LIB_SRC)/lagrangian/basic/lnInclude \
+-I$(LIB_SRC)/lagrangian/molecularDynamics/polyField/lnInclude \
+-I$(LIB_SRC)/lagrangian/molecularDynamics/potential/lnInclude \
+-I$(LIB_SRC)/lagrangian/molecularDynamics/general/lnInclude \
+-isystem $(GTEST_DIR)/include
+EXE_LIBS = \
+-lfiniteVolume \
+-lmeshTools \
+-llagrangian \
+-lpolyField \
+-lpotential \
+-lgeneralMolecule \
+-lpthread \
+-L$(GTEST_DIR) \
+-lgtest

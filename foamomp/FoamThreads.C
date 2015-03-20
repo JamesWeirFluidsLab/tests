@@ -53,15 +53,15 @@ TEST(TestFoamThreads,foamPolyMolecule){
     }
 }
 int main(int argc, char *argv[]){
-    List<polyMolecule*> polyList(100000);
+   /* List<polyMolecule*> polyList(100000);
     
 #pragma omp parallel for default(none) private(polyList)
     for(int i = 0; i<100000;i++){
         polyMolecule* temp = polyList[i];
     }
     return 0;
-  /*
+  */
     ::testing::InitGoogleTest(&argc,argv);
-    return RUN_ALL_TESTS();*/
+    return RUN_ALL_TESTS();
 }
     

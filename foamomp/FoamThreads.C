@@ -53,15 +53,19 @@ TEST(TestFoamThreads,foamPolyMolecule){
     }
 }
 int main(int argc, char *argv[]){
-   /* List<polyMolecule*> polyList(100000);
+    List<polyMolecule*> polyList(100000);
     
-#pragma omp parallel for default(none) private(polyList)
-    for(int i = 0; i<100000;i++){
+    printf("Size of list %d\n",polyList.size());
+#pragma omp parallel default(none) shared(polyList)
+    {
+    for(int i = omp_get_thread_num(); i<100000;i+=omp_get_num_threads()){
         polyMolecule* temp = polyList[i];
+	vector& temppos = temp->position();
+    }
     }
     return 0;
-  */
+  /*
     ::testing::InitGoogleTest(&argc,argv);
-    return RUN_ALL_TESTS();
+    return RUN_ALL_TESTS();*/
 }
     

@@ -1,7 +1,11 @@
 EXE_INC = \
-    -isystem $(GTEST_DIR)/include
+    -isystem $(GTEST_DIR)/include \
+    -I$(LIB_SRC)/OpenFOAM/lnInclude \
+    -I$(LIB_SRC)/lagrangian/basic/lnInclude
 
 EXE_LIBS = \
+    -lOpenFOAM \
+    -llagrangian \
     -lpthread \
     -L$(GTEST_DIR) \
     -lgtest

@@ -1,0 +1,58 @@
+39632	test $0x1, %sil
+39636	mov %esi, %edx
+39638	jnz 0x9b40
+39640	add $0x4, %rdi
+39644	mov $0xca, %r9d
+39650	nopw  %ax, (%rax,%rax,1)
+39656	movq  0x204689(%rip), %rax
+39663	cmpq  %rax, 0x20467a(%rip)
+39670	movq  0x2046e3(%rip), %rsi
+39677	jnbe 0x9b97
+39683	test %rsi, %rsi
+39686	jz 0x9b23
+39688	xor %ecx, %ecx
+39690	nopw  %ax, (%rax,%rax,1)
+39696	movl  (%rdi), %r8d
+39699	cmp %edx, %r8d
+39702	jnz 0x9b38
+39704	add $0x1, %rcx
+39708	cmp %rsi, %rcx
+39711	pause 
+39713	jnz 0x9b10
+39715	xor %r10d, %r10d
+39718	movq  0x20467b(%rip), %rsi
+39725	mov %r9d, %eax
+39728	syscall 
+39730	cmp $0xffffffffffffffda, %rax
+39734	jz 0x9b70
+39736	movl  (%rdi), %ecx
+39738	cmp %edx, %ecx
+39740	jz 0x9ae8
+39742	retq  
+39744	movl  (%rdi), %eax
+39746	lea 0x4(%rdi), %r8
+39750	mov $0x7fffffff, %edx
+39755	movl  %eax, 0x40(%rdi)
+39758	movl  0x4(%rdi), %eax
+39761	add $0x4, %eax
+39764	movl  %eax, 0x4(%rdi)
+39767	mov $0xca, %eax
+39772	movq  0x20464d(%rip), %rsi
+39779	mov %r8, %rdi
+39782	syscall 
+39784	cmp $0xffffffffffffffda, %rax
+39788	jz 0x9ba3
+39790	retq  
+39792	movq  0x204631(%rip), %rsi
+39799	andq  $0xffffffffffffff7f, 0x20462e(%rip)
+39810	xor %r10d, %r10d
+39813	mov %r9d, %eax
+39816	and $0x7f, %sil
+39820	movq  %rsi, 0x204615(%rip)
+39827	syscall 
+39829	jmp 0x9b38
+39831	movq  0x204652(%rip), %rsi
+39838	jmp 0x9b03
+39843	mov $0x7fffffff, %esi
+39848	mov %r8, %rdi
+39851	jmp 0x3760

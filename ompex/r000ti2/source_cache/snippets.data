@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx.C" md5="">
+    <snippet line="31">
+      <line line="28">/// main function for test</line>
+      <line line="29"/>
+      <line line="30">int main(int argc, char *argv[]){</line>
+      <line line="31">    Sample1 s1;</line>
+      <line line="32">    </line>
+    </snippet>
+    <snippet line="34">
+      <line line="31">    Sample1 s1;</line>
+      <line line="32">    </line>
+      <line line="33">#pragma omp parallel shared(s1)</line>
+      <line line="34">    {</line>
+      <line line="35">//         cout &lt;&lt; "Thread #" &lt;&lt; omp_get_thread_num() &lt;&lt; endl;</line>
+    </snippet>
+  </file>
+  <file name="/usr/include/c++/4.8.2/ostream" md5="">
+    <snippet line="535">
+      <line line="532">    __out.setstate(ios_base::badbit);</line>
+      <line line="533">      else</line>
+      <line line="534">    __ostream_insert(__out, __s,</line>
+      <line line="535">             static_cast&lt;streamsize&gt;(_Traits::length(__s)));</line>
+      <line line="536">      return __out;</line>
+    </snippet>
+  </file>
+</snippets>

@@ -1,0 +1,65 @@
+
+=== Start: [2015/04/14 15:41:11] === 
+Analysis started...
+Result file: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/r000ti2/r000ti2.inspxe 
+Found target process /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx (PID = 3775). Analysis started... 
+Loaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx. 
+Loaded module: /lib64/ld-linux-x86-64.so.2. 
+Loaded module: /lib64/libpthread.so.0. 
+Loaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/libOpenFOAM.so. 
+Loaded module: /lib64/libdl.so.2. 
+Loaded module: /lib64/libstdc++.so.6. 
+Loaded module: /lib64/libm.so.6. 
+Loaded module: /lib64/libgomp.so.1. 
+Warning: Inspector does not support the GNU OpenMP Runtime module and may report false positives. Refer to the product release notes. 
+Loaded module: /lib64/libgcc_s.so.1. 
+Loaded module: /lib64/libc.so.6. 
+Loaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/openmpi-system/libPstream.so. 
+Loaded module: /lib64/libz.so.1. 
+Loaded module: /usr/lib64/openmpi/lib/libmpi.so.1. 
+Loaded module: /lib64/librt.so.1. 
+Loaded module: /lib64/libnsl.so.1. 
+Loaded module: /lib64/libutil.so.1. 
+Loaded module: /lib64/libhwloc.so.5. 
+Loaded module: /lib64/libltdl.so.7. 
+Loaded module: /lib64/libnuma.so.1. 
+Loaded module: /lib64/libpciaccess.so.0. 
+Loaded module: /lib64/libXNVCtrl.so.0. 
+Loaded module: /lib64/libXext.so.6. 
+Loaded module: /lib64/libX11.so.6. 
+Loaded module: /lib64/libxml2.so.2. 
+Loaded module: /lib64/libxcb.so.1. 
+Loaded module: /lib64/liblzma.so.5. 
+Loaded module: /lib64/libXau.so.6. 
+Unloaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx. 
+Unloaded module: /lib64/ld-linux-x86-64.so.2. 
+Unloaded module: /lib64/libpthread.so.0. 
+Unloaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/libOpenFOAM.so. 
+Unloaded module: /lib64/libdl.so.2. 
+Unloaded module: /lib64/libstdc++.so.6. 
+Unloaded module: /lib64/libm.so.6. 
+Unloaded module: /lib64/libgomp.so.1. 
+Unloaded module: /lib64/libgcc_s.so.1. 
+Unloaded module: /lib64/libc.so.6. 
+Unloaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/openmpi-system/libPstream.so. 
+Unloaded module: /lib64/libz.so.1. 
+Unloaded module: /usr/lib64/openmpi/lib/libmpi.so.1. 
+Unloaded module: /lib64/librt.so.1. 
+Unloaded module: /lib64/libnsl.so.1. 
+Unloaded module: /lib64/libutil.so.1. 
+Unloaded module: /lib64/libhwloc.so.5. 
+Unloaded module: /lib64/libltdl.so.7. 
+Unloaded module: /lib64/libnuma.so.1. 
+Unloaded module: /lib64/libpciaccess.so.0. 
+Unloaded module: /lib64/libXNVCtrl.so.0. 
+Unloaded module: /lib64/libXext.so.6. 
+Unloaded module: /lib64/libX11.so.6. 
+Unloaded module: /lib64/libxml2.so.2. 
+Unloaded module: /lib64/libxcb.so.1. 
+Unloaded module: /lib64/liblzma.so.5. 
+Unloaded module: /lib64/libXau.so.6. 
+Process /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx (PID = 3775) has terminated. 
+Application exit code: 0 
+Result file: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/r000ti2/r000ti2.inspxe 
+Analysis completed
+=== End: [2015/04/14 15:41:21] === 

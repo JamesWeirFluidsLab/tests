@@ -32,6 +32,6 @@ int main(int argc, char *argv[]){
     potential pot(mesh, redUnits);
     polyMoleculeCloud molecules(runTime,mesh,pot,redUnits);
     ompThreads ompt(&molecules);
-    
+    ompt.readPolyMolecules();
     return RUN_ALL_TESTS();
 }

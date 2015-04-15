@@ -1,0 +1,10 @@
+39856	movl  0x4(%rdi), %eax
+39859	xor %esi, %esi
+39861	and $0xfffffffc, %eax
+39864	lock subl  $0x1, 0x40(%rdi)
+39869	setz %sil
+39873	add %eax, %esi
+39875	jmp 0x9ad0
+39880	nopl  %eax, (%rax,%rax,1)
+39888	movl  0x4(%rdi), %eax
+39891	xor %esi, %esi

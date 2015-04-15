@@ -53,6 +53,12 @@ TEST(TestSIMD,TestFMA){
     ev.store(Arr1);
     ASSERT_EQ(6.0,Arr1[1]);
 }
+
+TEST(TestSIMD,TestAssignment){
+    Foam::vectorize v1(0.1,0.2,0.3,0.4);
+    Foam::vectorize v2 = v1;
+    SUCCEED();
+}
 /*
 void TestSetFoamVector(){
     Foam::vector v1(0.1,2.0,0.009);

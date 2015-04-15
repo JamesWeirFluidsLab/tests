@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedback>
+ <message severity="info">Analysis started...</message>
+ <nop/>
+ <message severity="info">Result file: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/r000ti2/r000ti2.inspxe </message>
+ <nop/>
+ <message severity="info">Found target process /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx (PID = 3775). Analysis started... </message>
+ <nop/>
+ <message severity="info">Loaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/ld-linux-x86-64.so.2. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libpthread.so.0. </message>
+ <nop/>
+ <message severity="info">Loaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/libOpenFOAM.so. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libdl.so.2. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libstdc++.so.6. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libm.so.6. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libgomp.so.1. </message>
+ <nop/>
+ <message severity="warning">Inspector does not support the GNU OpenMP Runtime module and may report false positives. Refer to the product release notes. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libgcc_s.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libc.so.6. </message>
+ <nop/>
+ <message severity="info">Loaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/openmpi-system/libPstream.so. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libz.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /usr/lib64/openmpi/lib/libmpi.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/librt.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libnsl.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libutil.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libhwloc.so.5. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libltdl.so.7. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libnuma.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libpciaccess.so.0. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libXNVCtrl.so.0. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libXext.so.6. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libX11.so.6. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libxml2.so.2. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libxcb.so.1. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/liblzma.so.5. </message>
+ <nop/>
+ <message severity="info">Loaded module: /lib64/libXau.so.6. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/ld-linux-x86-64.so.2. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libpthread.so.0. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/libOpenFOAM.so. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libdl.so.2. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libstdc++.so.6. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libm.so.6. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libgomp.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libgcc_s.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libc.so.6. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/openmpi-system/libPstream.so. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libz.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /usr/lib64/openmpi/lib/libmpi.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/librt.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libnsl.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libutil.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libhwloc.so.5. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libltdl.so.7. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libnuma.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libpciaccess.so.0. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libXNVCtrl.so.0. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libXext.so.6. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libX11.so.6. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libxml2.so.2. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libxcb.so.1. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/liblzma.so.5. </message>
+ <nop/>
+ <message severity="info">Unloaded module: /lib64/libXau.so.6. </message>
+ <nop/>
+ <message severity="info">Process /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx (PID = 3775) has terminated. </message>
+ <nop/>
+ <message severity="info">Application exit code: 0 </message>
+ <nop/>
+ <message severity="info">Result file: /home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/r000ti2/r000ti2.inspxe </message>
+ <nop/>
+ <message severity="info">Analysis completed</message>
+ <nop/>
+</feedback>

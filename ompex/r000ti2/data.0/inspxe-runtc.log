@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2015/04/14 15:41:11</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/r000ti2/r000ti2.inspxe</arg>
+</msg>
+<msg id="4" tool="tc">
+  <type>START</type>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="5" tool="tc">
+  <type>EXEC_OF_INTEREST</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx</arg>
+  <arg>3775</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="6" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx</arg>
+  <arg>0x400000</arg>
+  <arg>0x60209f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="7" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x32f6800000</arg>
+  <arg>0x32f6a22207</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="8" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <arg>0x32f7000000</arg>
+  <arg>0x32f721b41f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="9" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/libOpenFOAM.so</arg>
+  <arg>0x7f248e5df000</arg>
+  <arg>0x7f248ed74777</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="10" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <arg>0x3d81a00000</arg>
+  <arg>0x3d81c0312f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="11" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libstdc++.so.6</arg>
+  <arg>0x32f9800000</arg>
+  <arg>0x32f9b0341f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="12" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <arg>0x32f7800000</arg>
+  <arg>0x32f7b01157</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="13" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libgomp.so.1</arg>
+  <arg>0x32f9000000</arg>
+  <arg>0x32f920e25f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="14" tool="tc">
+  <type>UNSUPPORTED_MODULE</type>
+  <arg>GNU OpenMP Runtime module</arg>
+  <severity>WARNING</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="15" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libgcc_s.so.1</arg>
+  <arg>0x32f8400000</arg>
+  <arg>0x32f86153ff</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="16" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <arg>0x32f6c00000</arg>
+  <arg>0x32f6fc025f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="17" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/openmpi-system/libPstream.so</arg>
+  <arg>0x7f248e38e000</arg>
+  <arg>0x7f248e59928f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="18" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libz.so.1</arg>
+  <arg>0x32f7c00000</arg>
+  <arg>0x32f7e15207</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="19" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib64/openmpi/lib/libmpi.so.1</arg>
+  <arg>0x3495e00000</arg>
+  <arg>0x349618f5ef</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="20" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/librt.so.1</arg>
+  <arg>0x32f8000000</arg>
+  <arg>0x32f8207c37</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="21" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnsl.so.1</arg>
+  <arg>0x330d000000</arg>
+  <arg>0x330d218ab7</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="22" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libutil.so.1</arg>
+  <arg>0x331f400000</arg>
+  <arg>0x331f60210f</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="23" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libhwloc.so.5</arg>
+  <arg>0x3495a00000</arg>
+  <arg>0x3495c2d977</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="24" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libltdl.so.7</arg>
+  <arg>0x34b1200000</arg>
+  <arg>0x34b14092c7</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="25" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libnuma.so.1</arg>
+  <arg>0x3ced400000</arg>
+  <arg>0x3ced60a8e7</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="26" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libpciaccess.so.0</arg>
+  <arg>0x3cedc00000</arg>
+  <arg>0x3cede08207</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="27" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libXNVCtrl.so.0</arg>
+  <arg>0x3495200000</arg>
+  <arg>0x3495405167</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="28" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libXext.so.6</arg>
+  <arg>0x3496200000</arg>
+  <arg>0x3496411917</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="29" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libX11.so.6</arg>
+  <arg>0x3495600000</arg>
+  <arg>0x349593adff</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="30" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libxml2.so.2</arg>
+  <arg>0x3497a00000</arg>
+  <arg>0x3497d67037</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="31" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libxcb.so.1</arg>
+  <arg>0x32fcc00000</arg>
+  <arg>0x32fce1d367</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="32" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/liblzma.so.5</arg>
+  <arg>0x32fa000000</arg>
+  <arg>0x32fa224277</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="33" tool="tc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/libXau.so.6</arg>
+  <arg>0x32fd000000</arg>
+  <arg>0x32fd203127</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:12 2015</timestamp>
+</msg>
+<msg id="34" tool="tc">
+  <type>HEARTBEAT</type>
+  <arg>3775</arg>
+  <arg>0</arg>
+  <arg>47446</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:13 2015</timestamp>
+</msg>
+<msg id="35" tool="tc">
+  <type>HEARTBEAT</type>
+  <arg>3775</arg>
+  <arg>0</arg>
+  <arg>238741</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:14 2015</timestamp>
+</msg>
+<msg id="36" tool="tc">
+  <type>HEARTBEAT</type>
+  <arg>3775</arg>
+  <arg>0</arg>
+  <arg>106383</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:15 2015</timestamp>
+</msg>
+<msg id="37" tool="tc">
+  <type>HEARTBEAT</type>
+  <arg>3775</arg>
+  <arg>0</arg>
+  <arg>21179</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:16 2015</timestamp>
+</msg>
+<msg id="38" tool="tc">
+  <type>HEARTBEAT</type>
+  <arg>3787,3786,3785,3775</arg>
+  <arg>1,1,1,0</arg>
+  <arg>44,24,85,9868</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="39" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="40" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="41" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libpthread.so.0</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="42" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/libOpenFOAM.so</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="43" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libdl.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="44" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libstdc++.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="45" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libm.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="46" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libgomp.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="47" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libgcc_s.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="48" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libc.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="49" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/platforms/linux64Gcc48DPDebug/lib/openmpi-system/libPstream.so</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="50" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libz.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="51" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/usr/lib64/openmpi/lib/libmpi.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="52" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/librt.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="53" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libnsl.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="54" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libutil.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="55" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libhwloc.so.5</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="56" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libltdl.so.7</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="57" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libnuma.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="58" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libpciaccess.so.0</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="59" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libXNVCtrl.so.0</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="60" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libXext.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="61" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libX11.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="62" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libxml2.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="63" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libxcb.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="64" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/liblzma.so.5</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="65" tool="tc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/libXau.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="66" tool="tc">
+  <type>PROCESS_TERMINATE</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/TestOmpEx</arg>
+  <arg>3775</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="67" tool="tc">
+  <type>ANALYSIS_COMPLETE</type>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="68" tool="tc">
+  <type>STOP</type>
+  <severity>INFO</severity>
+  <timestamp>Tue Apr 14 15:41:17 2015</timestamp>
+</msg>
+<msg id="69" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>0</arg>
+</msg>
+<msg id="70" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/saifmulla/OpenFOAM/OpenFOAM-2.1.x/src/lagrangian/molecularDynamics/tests/ompex/r000ti2/r000ti2.inspxe</arg>
+</msg>
+<msg id="71" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="72" tool="runtool">
+  <type>log-end</type>
+  <arg>2015/04/14 15:41:21</arg>
+</msg>
+
+</log>
+
